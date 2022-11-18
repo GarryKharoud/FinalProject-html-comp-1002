@@ -5,14 +5,14 @@
     padding: 0;
     font-family: sans-serif;
 }
-.banner{
+.maain{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../Images/jakub-stekla-Z_2-rHHY3M8-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
-.navbar{
+.secondd{
     width: 85%;
     margin: auto;
     padding: 35px 0;
@@ -25,19 +25,19 @@
     cursor: pointer;
 
 }
-.navbar ul li
+.secondd ul li
 {
     list-style: none;
     display: inline-block;
     margin:  0 20px;
     position: relative;
 }
-.navbar ul li a{
+.secondd ul li a{
     text-decoration: none;
     color: aliceblue;
     text-transform: uppercase;
 }
-.navbar ul li ::after{
+.secondd ul li ::after{
     content: '';
     height: 3px;
     width: 0;
@@ -47,7 +47,7 @@
     bottom: -10px;
     transition: 0.5s;
 }
-.navbar ul li :hover::after{
+.secondd ul li :hover::after{
     width: 100%;
 }
 .content

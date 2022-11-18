@@ -1,0 +1,19 @@
+@import url(./reset.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.gamemain{
+    width: 100%;
+    height: 100vh;
+    background-image:url(..//Images/giacomo-maria-pivi-o-ki6a-hBys-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hhref ul>li>a
+{
+    text-decoration: none;
+    color: black;
+}

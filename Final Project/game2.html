@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess</title>
+    <link rel="stylesheet" href="./Styles/styles4.css">
+    <script src="./Javascripty/script2.js" defer></script>
+</head>
+<body>
+    <div class="game2">
+        <header>
+            <img src="./Images/Craft Beer Vintage.jpeg" class="logo" width="200">
+            <div class="lastagame2">
+                
+                <ul>
+                    <li>
+                        <a href="/index.html">Home Page </a>
+                    </li>
+                    <li>
+                        <a href="/Instructions.html">Instructions</a>
+                    </li>
+                    <li>
+                        <a href="/game.html">Rock Paper</a>
+                    </li>
+                    <li>
+                        <a href="/game2.html">Word Guess</a>
+                    </li>
+                    
+            </div>
+            <div id="newh1">
+            <h1>Guessing Game</h1>
+        </div>
+                <div class="dissplay">
+                    <h2>Enter a Word</h2>
+                    <p id="displayquestion"></p>
+                    <input type="text"  id="enterans" required maxlength="20" minlength="2" placeholder="Answer" /><br>
+                </div>
+
+        </header>
+        <div class="bbbutton">
+            <button type="button" onclick="toggleClock()" id="clockButton"><span></span>Start Game</button>
+            <button type="button" onclick="newone()" id="check"><span></span>Enter</button>
+        </div>
+    </div>
+</body>
+</html>

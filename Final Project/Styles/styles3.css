@@ -1,0 +1,93 @@
+@import url(./reset.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.gamemain {
+    width: 100%;
+    height: 120vh;
+    background-image: url(..//Images/giacomo-maria-pivi-o-ki6a-hBys-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 100pt;
+}
+.hhref ul li {
+    width: 100pt;
+    background-color: rgb(92, 92, 92);
+    border-right: 10px solid #bbb;
+}
+.hhref ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+
+}
+.hhref li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 11px;
+    text-decoration: none;
+}
+
+.hhref li a:hover {
+    background-color: #111;
+}
+.hhref li:last-child{
+    border-right: none;
+}
+h1
+{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bold;
+}
+#anss{
+width: 10%;
+display: flex;
+flex-direction: column;
+float: left;
+}
+.both
+{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    background-color: #111;
+    outline: 0.2em double #ccc;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    float: right;
+}
+.both img{
+    
+    padding-top: 1em;
+    padding-right: 1em;
+    width: 50%;
+    
+}
+.Lost ,.Won,.Tied{
+    
+    font-size: 19pt;
+    font-weight: 800;
+}
+.scoress{
+    
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-right: 2em;
+    padding-top: 2em;
+    
+}
+.scoress div{
+    background-color: #bbb;
+    opacity: 0.8;
+}

@@ -1,5 +1,7 @@
 var ans;
 var computer;
+var youwin="You Win";
+var youlose="Wrong Guess";
 //var ansgiven;
 var questionasked;
 var questionlist = ["the red liquid that is sent around the body by the heart",
@@ -17,22 +19,24 @@ ans=anslist[computer];
 // document.getElementById("displayquestion").innerText = questionasked;
 
 var chances=3;
-function newone()
-{
-    let ansgiven=document.getElementById("enterans").innerText;
+var upperBtn = document.getElementsByClassName("to-upper-btn")[0];
+    upperBtn.addEventListener("click", function(){
     while(chances>0)
     {
+        let ansgiven=document.getElementById("enterans").innerText;
         if(ansgiven===ans)
         {
+            document.getElementById("winorlose").innerText = youwin;
         // let win = document.getElementById("displayquestion");
         console.log("Youn win");
         }
         else
         {
+            document.getElementById("winorlose").innerText = youlose;
             chances--;
         }
     }
-}
+});
 let que = document.getElementById("displayquestion");
 console.log(que);
 function toggleClock()

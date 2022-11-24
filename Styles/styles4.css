@@ -83,13 +83,19 @@ button
     text-align: center;
     align-items: center;
 }
-h2,p,input{
+.dissplay h2, p,input{
     outline: 0.1em double #ccc;
     background-color: rgb(96, 108, 119);
 }
 p{
     background-color: rgb(135, 167, 140);
 }
+#winorlose 
+{
+    text-align: center;
+    padding: 1em;
+}
+
 input{
     padding: 0.4em;
 }

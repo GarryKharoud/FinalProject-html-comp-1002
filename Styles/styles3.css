@@ -54,6 +54,9 @@ width: 10%;
 display: flex;
 flex-direction: column;
 float: left;
+gap: 1em;
+background-color: #111;
+padding: 1em;
 }
 .both
 {
@@ -67,7 +70,6 @@ float: left;
     float: right;
 }
 .both img{
-    
     padding-top: 1em;
     padding-right: 1em;
     width: 50%;
@@ -77,9 +79,10 @@ float: left;
     
     font-size: 19pt;
     font-weight: 800;
+    
 }
 .scoress{
-    
+    gap: 1em;
     display: flex;
     flex-direction: column;
     float: right;

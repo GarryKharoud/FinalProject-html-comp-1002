@@ -90,10 +90,15 @@ button
 p{
     background-color: rgb(135, 167, 140);
 }
-#winorlose 
+#winorlose ,#yourchances
 {
+    font-size: 18pt;
+    font-weight: bolder;
     text-align: center;
-    padding: 1em;
+    
+    background-color: antiquewhite;
+    width: 30%;
+    opacity: 0.7;
 }
 
 input{

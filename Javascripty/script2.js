@@ -2,7 +2,8 @@ var ans;
 var computer;
 var youwin="You Win";
 var youlose="Wrong Guess";
-//var ansgiven;
+let output=document.getElementById('winorlose');
+let mychances=document.getElementById('yourchances');
 var questionasked;
 var questionlist = ["the red liquid that is sent around the body by the heart",
 "the mixture of gases that surrounds the Earth and that we breathe",
@@ -21,21 +22,22 @@ ans=anslist[computer];
 var chances=3;
 var upperBtn = document.getElementsByClassName("to-upper-btn")[0];
     upperBtn.addEventListener("click", function(){
-    while(chances>0)
-    {
-        let ansgiven=document.getElementById("enterans").innerText;
+        let ansgiven=document.getElementById("enterans").value;
         if(ansgiven===ans)
         {
-            document.getElementById("winorlose").innerText = youwin;
+            output.innerHTML="You win";
         // let win = document.getElementById("displayquestion");
-        console.log("Youn win");
         }
         else
         {
-            document.getElementById("winorlose").innerText = youlose;
+            output.innerHTML="Oops";
             chances--;
         }
-    }
+        if(chances==0)
+        {
+            output.innerHTML="Oops! out of chances! You Lose";
+        }
+        mychances.innerHTML='You have  ' +chances +' chances left';
 });
 let que = document.getElementById("displayquestion");
 console.log(que);

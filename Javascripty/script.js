@@ -5,18 +5,19 @@ var opponentScore = 0;
 var itsatie=0;
 var anss = ["rock", "paper", "scissors"];
 
-window.onload = function() {
-    for (let i = 0; i < 3; i++) {
-        // <img id="rock" src="rock.png">
-        let choice = document.createElement("img");
-        choice.id = anss[i];
-        choice.src = anss[i] + ".png";
-        choice.addEventListener("click", selectChoice);
-        document.getElementById("anss").append(choice);
+window.onload = function() 
+{
+    for (let i = 0; i < 3; i++) 
+    {
+        let myanss = document.createElement("img");
+        myanss.id = anss[i];
+        myanss.src = anss[i] + ".png";
+        myanss.addEventListener("click", selectChoice);
+        document.getElementById("anss").append(myanss);
     }
 }
-
-function selectChoice() {
+function selectChoice() 
+{
     opponent = Math.floor(Math.random() * 3);
     var store;
     if(opponent===0)
@@ -67,7 +68,8 @@ if(opponent===1)
     {
         myscore++;
     }
-}if(opponent===2)
+}
+if(opponent===2)
 {
     if(you==="rock")
     {

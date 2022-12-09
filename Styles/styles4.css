@@ -68,13 +68,17 @@ button
     background-color: rgb(54, 69, 119);
     font-size: 17pt;
     font-weight: bold;
+    width: 150px;
     
 }
 .dissplay{
     padding-top: 2em;
     padding-left: 10em;
     padding-right: 10em;
+    display: flex;
+    flex-direction: column;
     gap: 1em;
+    
 }
 .dissplay ,#enterans input{
     
@@ -103,4 +107,93 @@ p{
 
 input{
     padding: 0.4em;
+}
+input:focus{
+    background-color: black;
+    color: #ccc;
+}
+button:active{
+    transition: 0.1s;
+    width: 170px;
+background-color: #ccc;
+}
+button:focus::after{
+    transition: 0.1s;
+    background-color: rgb(54, 69, 119);
+}
+.lastbutton{
+    background-color: black;
+    color: #ccc;
+}
+
+@media only screen and (max-width: 1310px) {
+     .lastagame2 ul>li{
+        outline: none;
+        outline: #ccc dashed 0.1em;
+    }
+    .lastagame2 ul>li>a{
+        outline: none;
+    }
+    .lastagame2{
+        outline: none;
+        background-color: unset;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .dissplay #displayquestion {
+        font-size: 15px;
+    }
+    .dissplay
+    {
+        margin:  0 -15px;
+        block-size: 10px;
+    }
+    button{
+        position: static;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .dissplay h2{
+        font-size: 15px;
+        
+    }
+    #winorlose,#yourchances{
+        font-size: 18px;
+    }
+    #newh1 h1{
+        font-size: 24px;
+    }
+    .lastagame2 ul>li>a{
+        font-size: 10px;
+    }
+    button{
+        font-size: 20px;
+    }
+    .dissplay #displayquestion {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .dissplay{
+        position: relative;
+    }
+    #displayquestion{
+        width: 200px;
+    }
+    .dissplay h2{
+        width: 100px;
+    }
+    button{
+        font-size: 14px;
+    }
+    #winorlose,#yourchances{
+        font-size: 13px;
+    }
+    @media only screen and (max-width: 600px){
+        .game2{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    }
 }

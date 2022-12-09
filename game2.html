@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="./Styles/styles4.css">
     <script src="./Javascripty/script2.js" defer></script>
 </head>
+
 <body>
     <div class="game2">
         <header>
-            <img src="./Images/Craft Beer Vintage.jpeg" class="logo" width="200">
+            <img src="./Images/Craft Beer Vintage.jpeg" class="logo" width="200" alt="">
             <div class="lastagame2">
-                
+
                 <ul>
                     <li>
                         <a href="/index.html">Home Page </a>
@@ -27,26 +29,30 @@
                     <li>
                         <a href="/game2.html">Word Guess</a>
                     </li>
-                    
+                    </ul>
             </div>
             <div id="newh1">
-            <h1>Guessing Game</h1>
-        </div>
-                <div class="dissplay">
-                    <h2>Enter a Word</h2>
-                    <p id="displayquestion"></p>
-                    <input type="text"  id="enterans" required maxlength="20" minlength="2" placeholder="Answer" /><br>
-                </div>
-                <div id="lastlast">
-                    <h2 id="winorlose"></h2>
-                    <h3 id="yourchances"></h3>
-                </div>
+                <h1>Guessing Game</h1>
+            </div>
+            <div class="dissplay">
+                <h2>Enter a Word</h2>
+                <p id="displayquestion"></p>
+                <input type="text" id="enterans" required maxlength="20" minlength="2" placeholder="Answer" /><br>
+            </div>
+            <div id="lastlast">
+                <h2 id="winorlose"></h2>
+                <h3 id="yourchances"></h3>
+            </div>
 
         </header>
         <div class="bbbutton">
             <button type="button" onclick="toggleClock()" id="clockButton"><span></span>Start Game</button>
             <button type="button" class="to-upper-btn">Check</button>
         </div>
+        <div>
+            <button type="button" class="lastbutton">New Button</button>
+        </div>
     </div>
 </body>
+
 </html>

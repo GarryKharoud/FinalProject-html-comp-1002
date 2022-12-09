@@ -49,15 +49,18 @@ console.log(que);
 function toggleClock() {
     que.innerHTML = questionasked;
 }
-var newgamw = document.getElementsByClassName("lastbutton");
-if (newe == 1) {
+var newgamw = document.getElementsByClassName("lastbutton")[0];
     newgamw.addEventListener("click", function () {
+        if(newe==1)
+        {
         computer = Math.floor(Math.random() * 9);
         console.log(computer);
         questionasked = questionlist[computer];
         console.log(questionasked);
         ans = anslist[computer];
         que.innerHTML = questionasked;
+        chances=3;
+        newe=0;
+        }
         //upperBtn();
     })
-}
